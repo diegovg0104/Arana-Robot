@@ -13,13 +13,22 @@ int trig=10;
 int echo=11;           //Declaracion de el sensor ultrasonico
 float duracion;
 float distancia;
-int Nbp1=30; //Normal base posiscion1
- 
-int Ibp1= 80;   //Invertido base posicion 1
 
-int Npp1= 70;  //Normal pata posicion 1
+int Nbp1=30;
+int Nbp2 =90; //Normal base posisicon (n)
+int Nbp3 = 0;
 
-int Ipp1 = 100;   //Invertido Pata Posicion 1
+int Ibp1= 100;
+int Ibp2= 40;  //Invertido base psicion (n)
+int Ibp3= 160;
+
+int Npp1= 70;
+int Npp2=50;   //Normal pata posisicon (n)
+int Npp3=30;
+
+int Ipp1 = 100;
+int Ipp2 = 120; //Invertido pata psicion (n)
+int Ipp3 = 150;
   
 void setup()  { 
   Serial.begin(9600);    // inicia el puerto serial para comunicacion con el Bluetooth
@@ -122,24 +131,7 @@ leg3.write(Ibp1);
 }
 
 void Adel() {
-leg5.write(Npp2);
-leg8.write(Npp2);
-leg1.write(Nbp2);
-leg4.write(Nbp2);
-leg2.write(Ibp1);
-leg3.write(Ibp1);
-leg5.write(Npp1);
-leg8.write(Npp1);
-delay(500);
-leg6.write(Ipp2);
-leg7.write(Ipp2);
-leg2.write(Ibp2);
-leg3.write(Ibp2);
-leg1.write(Nbp1);
-leg4.write(Nbp1);
-leg6.write(Ipp1);
-leg7.write(Ipp1);
-delay(500); 
+
 }
 
 void Atras() {
@@ -164,19 +156,13 @@ void gir_izq() {
 }
 
 void subir() {
-leg5.write(90);
-leg8.write(90);
-leg7.write(90);
-leg6.write(90);
+
 
 
 }
 
 void bajar() {
-leg5.write(0);
-leg8.write(0);
-leg7.write(0);
-leg6.write(0);
+
 }
 void sensor(){
   digitalWrite(trig,LOW);
