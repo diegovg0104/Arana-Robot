@@ -13,14 +13,13 @@ int trig=10;
 int echo=11;           //Declaracion de el sensor ultrasonico
 float duracion;
 float distancia;
-int Nbp1=50;      //Normal Base Posicion 1
-int Nbp2= 0;     //Normal Base Posicion 2
-int Ibp1= 130;      //Invertido Base Posicion 1
-int Ibp2= 180;      //Invertido Base Posicion 2
-int Npp1= 60;     //Normal Pata Posicion 1
-int Npp2 = 30;      //Normal Pata Posicion 2     
-int Ipp1 = 120;     //Invertido Pata Posicion 1
-int Ipp2= 150;      //Invertido Pata Posicion 2
+int Nbp1=30; //Normal base posiscion1
+ 
+int Ibp1= 80;   //Invertido base posicion 1
+
+int Npp1= 70;  //Normal pata posicion 1
+
+int Ipp1 = 100;   //Invertido Pata Posicion 1
   
 void setup()  { 
   Serial.begin(9600);    // inicia el puerto serial para comunicacion con el Bluetooth
