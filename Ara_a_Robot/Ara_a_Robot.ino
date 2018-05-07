@@ -41,7 +41,15 @@ void setup()  {
    leg7.attach(8);
    leg8.attach(9);
    pinMode(trig,OUTPUT);
-   pinMode(echo,INPUT);       
+   pinMode(echo,INPUT);   
+  leg1.write(Nbp3);
+  leg5.write(Npp1);
+  leg2.write(Ibp1);
+  leg6.write(Ipp1);
+  leg3.write(Ibp1);
+  leg7.write(Ipp1);
+  leg4.write(Nbp1);
+  leg8.write(Npp1);
                  
     
  } 
@@ -131,7 +139,29 @@ leg3.write(Ibp1);
 }
 
 void Adel() {
-
+leg5.write(Npp1);
+leg1.write(Nbp1);
+leg8.write(Npp1);
+delay(500);
+leg6.write(Ipp2);
+leg7.write(Ipp2);
+delay(500);
+leg2.write(Ibp3);
+leg3.write(Ibp2);
+leg4.write(Nbp3);
+leg1.write(Nbp2);
+delay(500);
+leg6.write(Ipp1);
+leg7.write(Ipp1);
+delay(500);
+leg5.write(Npp2);
+leg8.write(Npp2);
+delay(500);
+leg1.write(Nbp1);
+leg4.write(Nbp2);
+leg2.write(Ibp2);
+leg3.write(Ibp1);
+delay(500);
 }
 
 void Atras() {
