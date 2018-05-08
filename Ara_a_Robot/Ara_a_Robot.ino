@@ -165,7 +165,29 @@ delay(500);
 }
 
 void Atras() {
-
+leg5.write(Npp1);
+leg1.write(Nbp1);
+leg8.write(Npp1);
+delay(500);
+leg6.write(Ipp2);
+leg7.write(Ipp2);
+delay(500);
+leg2.write(Ibp3);
+leg3.write(Ibp2);
+leg4.write(Nbp3);
+leg1.write(Nbp2);
+delay(500);
+leg6.write(Ipp1);
+leg7.write(Ipp1);
+delay(500);
+leg5.write(Npp2);
+leg8.write(Npp2);
+delay(500);
+leg1.write(Nbp1);
+leg4.write(Nbp2);
+leg2.write(Ibp2);
+leg3.write(Ibp1);
+delay(500);
 
 }
 
@@ -178,24 +200,98 @@ void izq() {
 }
 
 void gir_der() {
-
+ leg1.write(Nbp1);
+leg5.write(Npp1);
+leg2.write(Ibp1);
+leg6.write(Ipp1);
+leg3.write(Ibp1);
+leg7.write(Ipp1);
+leg4.write(Nbp1);
+leg8.write(Npp1);
+delay(500);
+leg5.write(Npp2);
+delay(500);
+leg1.write(Nbp3);
+delay(500);
+leg5.write(Npp1);
+delay(500);
+leg6.write(Ipp2);
+delay(500);
+leg2.write(Ibp2);
+delay(500);
+leg6.write(Ipp1);
+delay(500);
+leg8.write(Npp2);
+delay(500);
+leg4.write(Nbp3);
+delay(500);
+leg8.write(Npp1);
+delay(500);
+leg7.write(Ipp2);
+delay(500);
+leg3.write(Ibp2);
+delay(500);
+leg7.write(Ipp1);
+delay(500);
 }
 
 void gir_izq() {
+leg1.write(Nbp1);
+leg5.write(Npp1);
+leg2.write(Ibp1);
+leg6.write(Ipp1);
+leg3.write(Ibp1);
+leg7.write(Ipp1);
+leg4.write(Nbp1);
+leg8.write(Npp1);
+delay(500);
+leg5.write(Npp2);
+delay(500);
+leg1.write(Nbp2);
+delay(500);
+leg5.write(Npp1);
+delay(500);
+leg7.write(Ipp2);
+delay(500);
+leg3.write(Ibp3);
+delay(500);
+leg7.write(Ipp1);
+delay(500);
+leg8.write(Npp2);
+delay(500);
+leg4.write(Nbp2);
+delay(500);
+leg8.write(Npp1);
+delay(500);
+leg6.write(Ipp2);
+delay(500);
+leg2.write(Ibp3);
+delay(500);
+leg6.write(Ipp1);
+delay(500);
 
 }
 
 void subir() {
 
-
+  
+leg5.write(Npp1);
+leg6.write(Ipp1);
+leg7.write(Ipp1);
+leg8.write(Npp1);
 
 }
 
 void bajar() {
+  
+leg5.write(Npp3);
+leg6.write(Ipp3);
+leg7.write(Ipp3);
+leg8.write(Npp3);
 
 }
 void saludar() {
-  delay(500);
+ 
 leg5.write(Npp3);
 leg7.write(Ipp3);
 leg8.write(Npp3);
@@ -212,6 +308,7 @@ for(int k = 0 ; k < 5 ; k++)
   leg2.write(Ibp2);
   delay(500);
   }
+ delay(500);
 }
 
 void sensor(){
