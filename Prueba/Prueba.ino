@@ -51,7 +51,7 @@ leg7.write(Ipp1);
 leg4.write(Nbp1);
 leg8.write(Npp1);
 
-for(int i = 0; 1 < 10 ; i++)
+for(int i = 0; i < 10 ; i++)
 {
 
 leg5.write(Npp1);
@@ -78,15 +78,23 @@ leg2.write(Ibp2);
 leg3.write(Ibp1);
 delay(500);
 }
+
+delay(500);
 leg5.write(Npp3);
 leg7.write(Ipp3);
 leg8.write(Npp3);
+leg6.write(180);
+leg1.write(Nbp1);
+leg3.write(Ibp1);
+leg4.write(Nbp1);
 delay(500);
-leg6.write(0)
-delay(500);
-for(int i = 0 ; 1 < 10 ; i++){
+
+for(int k = 0 ; k < 5 ; k++)
+{
   leg2.write(Ibp3);
+ delay(500);
   leg2.write(Ibp2);
+  delay(500);
   }
 }
 

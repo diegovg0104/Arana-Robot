@@ -194,6 +194,26 @@ void subir() {
 void bajar() {
 
 }
+void saludar() {
+  delay(500);
+leg5.write(Npp3);
+leg7.write(Ipp3);
+leg8.write(Npp3);
+leg6.write(180);
+leg1.write(Nbp1);
+leg3.write(Ibp1);
+leg4.write(Nbp1);
+delay(500);
+
+for(int k = 0 ; k < 5 ; k++)
+{
+  leg2.write(Ibp3);
+ delay(500);
+  leg2.write(Ibp2);
+  delay(500);
+  }
+}
+
 void sensor(){
   digitalWrite(trig,LOW);
   delay(1);
