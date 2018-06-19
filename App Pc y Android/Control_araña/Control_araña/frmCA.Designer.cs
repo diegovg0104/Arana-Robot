@@ -50,6 +50,7 @@
             this.btnl = new System.Windows.Forms.Button();
             this.btnr = new System.Windows.Forms.Button();
             this.btnup = new System.Windows.Forms.Button();
+            this.btnsalu = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -275,6 +276,16 @@
             this.btnup.UseVisualStyleBackColor = true;
             this.btnup.Click += new System.EventHandler(this.btnup_Click);
             // 
+            // btnsalu
+            // 
+            this.btnsalu.Image = global::Control_araña.Properties.Resources.sal;
+            this.btnsalu.Location = new System.Drawing.Point(345, 139);
+            this.btnsalu.Name = "btnsalu";
+            this.btnsalu.Size = new System.Drawing.Size(45, 40);
+            this.btnsalu.TabIndex = 14;
+            this.btnsalu.UseVisualStyleBackColor = true;
+            this.btnsalu.Click += new System.EventHandler(this.btnsalu_Click);
+            // 
             // frmControl_Araña
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -282,6 +293,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(500, 305);
             this.ControlBox = false;
+            this.Controls.Add(this.btnsalu);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btngr);
@@ -332,6 +344,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ToolStripMenuItem conectarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem btndes;
+        private System.Windows.Forms.Button btnsalu;
     }
 }
 

@@ -158,9 +158,15 @@ namespace Control_araña
             Arduinoport.Write("j");
         }
 
+
         private void btngl_Click(object sender, EventArgs e)
         {
             Arduinoport.Write("h");
+        }
+
+        private void btnsalu_Click(object sender, EventArgs e)
+        {
+            Arduinoport.Write("k");
         }
      
         
