@@ -357,7 +357,7 @@ void mauto(){
    
        
 
-         if (distancia < 8){
+         if (distancia < 10){
             leg1.write(Nbp1);
             leg5.write(Npp1);
             leg2.write(Ibp1);
